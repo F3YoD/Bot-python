@@ -1,7 +1,9 @@
 import discord
 import youtube_dl
+from bot_token import TOKEN
 
-TOKEN="NDkxMTQwMjUwNDk2OTI1Njk2.DoDjwg.AQNS__A3TZR8BEhAHxKQI_XgTZo"
+if not TOKEN:
+    raise ValueError("Please add your token to bot_token.py")
 
 client = discord.Client()
 
